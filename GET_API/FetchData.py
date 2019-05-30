@@ -10,7 +10,6 @@ base_URL = ProjectConfig.intialize_appurl()
 
 class FetchData(unittest.TestCase):
 
-
     def test_get_User_Response(self):
         # Send GET request for /users
         response_users = requests.get(base_URL+"/users")

@@ -1,3 +1,3 @@
 def intialize_appurl():
-    appurl = "https://jsonplaceholder.typicode.com"
-    return appurl
+    appUrl = "https://jsonplaceholder.typicode.com"
+    return appUrl

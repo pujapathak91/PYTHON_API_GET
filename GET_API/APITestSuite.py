@@ -10,7 +10,7 @@ fetch_data_test = unittest.TestLoader().loadTestsFromTestCase(FetchData.FetchDat
 error_data_test = unittest.TestLoader().loadTestsFromTestCase(ErrorData.ErrorData)
 combo_data_test = unittest.TestLoader().loadTestsFromTestCase(ComboData.ComboData)
 
-# create a test suite combining search_text and home_page_test
+# create a test suite combining fetch_data_test, error_data_test and combo_data_test
 test_suite = unittest.TestSuite([fetch_data_test, error_data_test,combo_data_test])
 
 # run the suite using HTMLTestRunner

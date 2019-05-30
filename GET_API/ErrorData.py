@@ -10,7 +10,7 @@ base_URL = ProjectConfig.intialize_appurl()
 class ErrorData(unittest.TestCase):
 
     def test_get_Error_User_Response(self):
-        # Send GET request for 11th users
+        # Send GET request for 11th user
         response_users = requests.get(base_URL+"/users/11")
 
         # Check Response for 11th /users

@@ -17,7 +17,7 @@ class ComboData(unittest.TestCase):
         # Send GET request for 50th albums
         response_50th_album = requests.get(base_URL+"/albums/50")
 
-        # Display Response content for 5th user and 50th album
+        # Display Response content for 5th user & 50th album
         print("Response data for user : ")
         print(json.dumps(response_5th_user.json(),indent=4))
         print("Response data for album : ")
