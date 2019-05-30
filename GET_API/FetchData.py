@@ -2,7 +2,6 @@ import requests
 import json
 import unittest
 import ProjectConfig
-import logging
 
 
 # Initialize Base URL
@@ -11,14 +10,9 @@ base_URL = ProjectConfig.intialize_appurl()
 
 class FetchData(unittest.TestCase):
 
-    # @classmethod
-    # def setUp(self):
-    #     base_URL = ProjectConfig.intialize_appurl()
-    #     print(base_URL)
 
     def test_get_User_Response(self):
         # Send GET request for /users
-        print("Send GET request for /users")
         response_users = requests.get(base_URL+"/users")
 
         # Check Total number of Response Json for /users
@@ -32,7 +26,6 @@ class FetchData(unittest.TestCase):
 
     def test_get_Album_Response(self):
         # Send GET request for /Albums
-        print("Send GET request for /albums")
         response_album = requests.get(base_URL + "/albums")
 
         # Display Total number of Response Json for /Albums
